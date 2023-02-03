@@ -1,0 +1,19 @@
+Description of the ADT 'array' functions
+
+*ADT array make use of the 'array API' functions*
+*an 'Array' struct is used, it contains -
+T* arr //type T pointer
+int len //amount of elements it contains
+int cap //capacity*
+
+array: takes int cap, initializes an array of capacity cap and returns the array. 
+arrayAdd: takes Array<T>& a, T t, adds t to the end of the array, and, if is necessary, increments its capacity and returns the position where t was added.
+arrayGet: takes Array<T> a, int p and returns the address of the element at position p in a.
+arraySet: takes Array<T>& a, int p, T t and assigns the element t at position p in a.
+arrayInsert: takes Array<T>& a, T t, int p and inserts t at position p in a.
+arraySize: takes Array<T> a and returns the size of a.
+arrayRemove: takes Array<T> a, int p, removes the element at position p in a and returns that element.
+arrayRemoveAll: takes Array<T>& a and removes every element in a.
+arrayFind: takes Array<T> a, K k, int cmpTK(T,K) and returns the position of the first appearance of k in a, if k is not in a, returns a negative value.
+arrayOrderedInsert: takes Array<T>& a, T t, int cmpTT(T,T), inserts t in a based on cmpTT criteria and returns the position where t was inserted.
+arraySort: takes Array<T>& a, int cmpTT() and sorts the array based on cmpTT.
