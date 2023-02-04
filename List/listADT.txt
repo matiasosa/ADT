@@ -1,0 +1,24 @@
+Description of the ADT 'list' functions
+
+*list is implemented by using 'lists' API*
+
+*a 'List' struct is implemented as follows -
+Node<T>* n
+int pos*
+
+list: returns a list.
+listAdd: takes List<T>& lst, T e, adds e at the end of lst and returns its address.
+listAddFirst: takes List<T>& lst, T e, adds e at the start of lst and returns its address.
+listRemove: takes List<T>& lst, K k, cmpTK(T,K), removes the node that contains k from lst and returns the info field of the node.
+listRemoveFirst: takes List<T>& lst, removes the node at the start of lst and returns its info field.
+lastFind: takes List<T> lst, K k, int cmpTK(T,K) and returns the address of the first element equal to k according to cmpTK(T,K), if the element is not in lst it returns NULL.
+listIsEmpty: takes List<T> lst and returns true if lst has no elements in it.
+listSize: takes List<T> lst and returns the amount of elements in lst.
+listFree: takes List<T>& lst and frees the memory that lst is using.
+listOrderedInsert: takes List<T>& lst, T t, intCmpTK(T,K) and inserts t using the order that cmptK establishes and returns the address of the element inserted. The list has to be sorted or empty.
+listSort: takes List<T>& lst, int cmpTT(T,T) and sorts lst using cmpTT.
+listReset: takes List<T>& lstprepares the list to be iterated.
+listHasNext: takes List<T> lst and returns true if is possible to keep iterating.
+listNext: takes List<T> lst and returns the next element of lst in an iteration.
+
+int cmpTK(T t, K k) is a function that specifies the search form that is being used.
