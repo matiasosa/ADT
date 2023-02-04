@@ -1,0 +1,22 @@
+Description of the ADT 'map' functions
+
+*map is implemented by using 'array' ADT*
+
+*a 'Map' struct is implemented, it contains -
+Array<K> key
+Array<V> value
+int i*
+
+map: returns a map.
+mapGet: takes Map<K,V> m, K k and returns the address of the value associated to the key k, if there is no value, returns NULL.
+mapPut: takes Map<K,V>& m, K k, V v, adds the element v associated to the key k in m and returns k's address.
+mapContains: takes Map<K,V> m, K k and returns true if m contains k.
+mapRemove: takes Map<K,V> m, K k, deletes from m the entry identified as k and returns the value.
+mapRemoveAll: takes Map<K,V>& m and empties m.
+mapSize: takes Map<K,V> m and returns the amount of entries in m.
+mapHasNext: takes Map<K,V> m and returns true if m has more elements to iterate.
+mapNextKey: takes Map<K,V>& m allows the user to iterate the keys of m, returning the next key in an iteration.
+mapNextValue: takes Map<K,V>& m allows the user to iterate the values of m, returning the address of the next value in an iteration.
+mapReset: takes Map<K,V>& m and prepares the map to a new iteration.
+mapSortByKeys: takes Map<K,V>& m, int cmpKK(K,K) and sorts the map by key, using the function's criteria.
+mapSortByValues: takes Map<K,V>& m, int cmpVV(V,V) and sorts the map by value, using the function's criteria.
