@@ -1,9 +1,5 @@
 C++ ADT (Abstract Data Type)
 
--tad Coll-
--tad Coll API-
--tad bit-writer-
--tad bit-reader-
 -tad array-
 -tad map-
 -tad list-
