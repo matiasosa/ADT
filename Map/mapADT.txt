@@ -20,3 +20,5 @@ mapNextValue: takes Map<K,V>& m allows the user to iterate the values of m, retu
 mapReset: takes Map<K,V>& m and prepares the map to a new iteration.
 mapSortByKeys: takes Map<K,V>& m, int cmpKK(K,K) and sorts the map by key, using the function's criteria.
 mapSortByValues: takes Map<K,V>& m, int cmpVV(V,V) and sorts the map by value, using the function's criteria.
+
+int cmpTK(T t, K k) is a function that specifies the search form that is being used.
