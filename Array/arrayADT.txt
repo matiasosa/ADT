@@ -17,3 +17,5 @@ arrayRemoveAll: takes Array<T>& a and removes every element in a.
 arrayFind: takes Array<T> a, K k, int cmpTK(T,K) and returns the position of the first appearance of k in a, if k is not in a, returns a negative value.
 arrayOrderedInsert: takes Array<T>& a, T t, int cmpTT(T,T), inserts t in a based on cmpTT criteria and returns the position where t was inserted.
 arraySort: takes Array<T>& a, int cmpTT() and sorts the array based on cmpTT.
+
+int cmpTK(T t, K k) is a function that specifies the search form that is being used.
