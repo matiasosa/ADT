@@ -1,0 +1,12 @@
+Description of the ADT 'stack' functions
+
+*stack is implemented by using 'lists' API*
+
+*a 'Stack' structure is implemented as follows -
+Node<T>* p*
+
+stack: returns an empty stack ready to be used.
+stackPush: takes Stack<T> st, T e, stacks the element e in st and returns its address.
+stackPop: takes Stack<T> st, unstacks an element from st and returns its address.
+stackIsEmpty: takes Stack<T> st and returns true if the queue has no elements in it.
+stackSize: takes Stack<T> st and returns the amount of elements q contains.
